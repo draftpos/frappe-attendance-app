@@ -1,0 +1,45 @@
+{
+ "charts": [
+  {
+   "chart_name": "Attendance Status Today",
+   "col": 12
+  },
+  {
+   "chart_name": "Gender Distribution",
+   "col": 12
+  }
+ ],
+ "content": "[{\"id\":\"hdr\",\"type\":\"header\",\"data\":{\"text\":\"Attendance KPIs\",\"level\":4}},{\"id\":\"c1\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Attendance Status Today\",\"col\":12}},{\"id\":\"s1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hik Attendance Log\",\"col\":4}},{\"id\":\"s2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Employee Attendance Summary\",\"col\":4}},{\"id\":\"s3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Attendance Settings\",\"col\":4}}]",
+ "creation": "2026-03-28 19:00:00.000000",
+ "doctype": "Workspace",
+ "is_hidden": 0,
+ "label": "Attendance Dashboard",
+ "modified": "2026-03-28 19:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe Attendance App",
+ "name": "Attendance Dashboard",
+ "owner": "Administrator",
+ "public": 1,
+ "sequence_id": 1,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "label": "Hik Attendance Log",
+   "link_to": "Hik Attendance Log",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "Employee Attendance Summary",
+   "link_to": "Employee Attendance Summary",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "label": "Attendance Settings",
+   "link_to": "Attendance Settings",
+   "type": "DocType"
+  }
+ ],
+ "states": []
+}

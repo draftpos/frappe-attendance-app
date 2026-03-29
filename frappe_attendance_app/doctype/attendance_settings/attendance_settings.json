@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "creation": "2026-03-28 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sb_work_hours",
+  "start_time",
+  "end_time",
+  "early_check_in_limit",
+  "cb1",
+  "day_of_week",
+  "sb_breaks",
+  "break_time_out",
+  "break_time_in",
+  "cb2",
+  "lunch_time_out",
+  "lunch_time_in"
+ ],
+ "fields": [
+  {
+   "fieldname": "sb_work_hours",
+   "fieldtype": "Section Break",
+   "label": "Work Hours"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "default": "15",
+   "fieldname": "early_check_in_limit",
+   "fieldtype": "Int",
+   "label": "Early Check-in Limit (minutes)"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "day_of_week",
+   "fieldtype": "MultiCheck",
+   "label": "Working Days",
+   "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_breaks",
+   "fieldtype": "Section Break",
+   "label": "Break & Lunch Times"
+  },
+  {
+   "fieldname": "break_time_out",
+   "fieldtype": "Time",
+   "label": "Break Start"
+  },
+  {
+   "fieldname": "break_time_in",
+   "fieldtype": "Time",
+   "label": "Break End"
+  },
+  {
+   "fieldname": "cb2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lunch_time_out",
+   "fieldtype": "Time",
+   "label": "Lunch Start"
+  },
+  {
+   "fieldname": "lunch_time_in",
+   "fieldtype": "Time",
+   "label": "Lunch End"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-03-28 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe Attendance App",
+ "name": "Attendance Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

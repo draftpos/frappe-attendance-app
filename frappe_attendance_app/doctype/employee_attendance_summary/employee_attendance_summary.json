@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ATT-SUM-{employee}-{month}-{year}",
+ "creation": "2026-03-28 12:41:57.012044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "month",
+  "year",
+  "sb_attendance",
+  "days_worked",
+  "days_late",
+  "days_early_leave",
+  "days_absent",
+  "cb_hours",
+  "early_check_in",
+  "total_hours_worked",
+  "overtime_hours",
+  "sb_metrics",
+  "attendance_rate",
+  "punctuality_rate",
+  "avg_work_hours_per_day",
+  "cb_metrics2",
+  "absence_rate",
+  "overtime_ratio"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember",
+   "reqd": 1
+  },
+  {
+   "default": "2026",
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_attendance",
+   "fieldtype": "Section Break",
+   "label": "Attendance Statistics"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_worked",
+   "fieldtype": "Float",
+   "label": "Days Worked"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_late",
+   "fieldtype": "Int",
+   "label": "Days Late"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_early_leave",
+   "fieldtype": "Int",
+   "label": "Days Early Leave"
+  },
+  {
+   "default": "0",
+   "fieldname": "days_absent",
+   "fieldtype": "Int",
+   "label": "Days Absent"
+  },
+  {
+   "fieldname": "cb_hours",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "early_check_in",
+   "fieldtype": "Int",
+   "label": "Early Check-in Days"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_hours_worked",
+   "fieldtype": "Float",
+   "label": "Total Hours Worked"
+  },
+  {
+   "default": "0",
+   "fieldname": "overtime_hours",
+   "fieldtype": "Float",
+   "label": "Overtime Hours"
+  },
+  {
+   "fieldname": "sb_metrics",
+   "fieldtype": "Section Break",
+   "label": "Computed Metrics"
+  },
+  {
+   "default": "0",
+   "fieldname": "attendance_rate",
+   "fieldtype": "Percent",
+   "label": "Attendance Rate",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "punctuality_rate",
+   "fieldtype": "Percent",
+   "label": "Punctuality Rate",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "avg_work_hours_per_day",
+   "fieldtype": "Float",
+   "label": "Avg Work Hours / Day",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_metrics2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "absence_rate",
+   "fieldtype": "Percent",
+   "label": "Absence Rate",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "overtime_ratio",
+   "fieldtype": "Percent",
+   "label": "Overtime Ratio",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-28 19:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe Attendance App",
+ "name": "Employee Attendance Summary",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
